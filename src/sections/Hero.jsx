@@ -1,3 +1,4 @@
+import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
 import HeroExperience from "../components/HeroModels/HeroExperience";
 import { words } from "../constants";
@@ -61,7 +62,7 @@ const Hero = () => {
 
             <Button
               className="md:w-80 md:h-16 w-60 h-12"
-              id="counter"
+              id="button"
               text="See my Work"
             />
           </div>
@@ -73,6 +74,8 @@ const Hero = () => {
           </div>
         </figure>
       </div>
+
+      <AnimatedCounter />
     </section>
   );
 };
