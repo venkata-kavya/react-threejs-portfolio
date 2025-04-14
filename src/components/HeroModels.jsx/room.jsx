@@ -6,8 +6,8 @@ Command: npx gltfjsx@6.5.3 optimized-room.glb
 import React from "react";
 import { useGLTF } from "@react-three/drei";
 
-export function Room(props) {
-  const { nodes, materials } = useGLTF("/optimized-room.glb");
+export default function Room(props) {
+  const { nodes, materials } = useGLTF("/models/optimized-room.glb");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -142,4 +142,4 @@ export function Room(props) {
   );
 }
 
-useGLTF.preload("/optimized-room.glb");
+useGLTF.preload("/models/optimized-room.glb");
