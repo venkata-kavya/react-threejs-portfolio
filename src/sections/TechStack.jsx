@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 import TitleHeader from "../components/TitleHeader";
-import TechIconCardExperience from "../components/models/tech_logos/TechIconCardExperience";
+import Techicon from "../components/models/TechLogos/Techicon";
 import { techStackIcons } from "../constants";
 
 const TechStack = () => {
@@ -35,18 +35,18 @@ const TechStack = () => {
           sub="🤝 What I Bring to the Table"
         />
         <div className="tech-grid">
-          {techStackIcons.map((techStackIcon) => (
+          {techStackIcons.map((icon) => (
             <div
-              key={techStackIcon.name}
+              key={icon.name}
               className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
             >
               <div className="tech-card-animated-bg" />
               <div className="tech-card-content">
                 <div className="tech-icon-wrapper">
-                  <TechIconCardExperience model={techStackIcon} />
+                  <Techicon model={icon} />
                 </div>
                 <div className="padding-x w-full">
-                  <p>{techStackIcon.name}</p>
+                  <p>{icon.name}</p>
                 </div>
               </div>
             </div>
